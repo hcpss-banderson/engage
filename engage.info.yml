@@ -1,0 +1,16 @@
+name: Engage
+type: theme
+description: An engaging theme.
+core: 8.x
+libraries:
+#  - hcpss_engage/font-awesome
+  - hcpss_engage/fira-sans
+  - engage/global-css
+  - engage/global-js
+regions:
+  header:         Header
+  featured:       Featured
+  sidebar_first:  'Sidebar first'
+  content:        Content
+  sidebar_second: 'Sidebar second'
+  footer:         'Footer'

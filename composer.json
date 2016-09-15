@@ -1,0 +1,23 @@
+{
+  "name": "drupal/engage",
+  "type": "drupal-theme",
+  "description": "A Susy based Drupal theme.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/hcpss-banderson/engage",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Brendan Anderson",
+      "role": "Maintainer"
+    }
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "gulp sass"
+    ],
+    "post-update-cmd": [
+      "gulp sass"
+    ]
+  }
+}

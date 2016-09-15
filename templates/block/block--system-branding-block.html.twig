@@ -1,0 +1,39 @@
+{% block content %}
+  <div class="site-banner">
+    <div class="site-banner-content">
+      {% if site_logo %}
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="logo">
+          <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+        </a>
+      {% endif %}
+
+      {% if site_name %}
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-name">{{ site_name }}</a>
+      {% endif %}
+
+      {% if school_code or facebook_url %}
+        <nav class="social-links site-nav">
+          {% if school_code %}
+            <a href="https://twitter.com/hcpss_{{ school_code }}" title="{{ site_name }}'s twitter feed">
+              <img alt="Twitter" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png">
+            </a>
+          {% endif %}
+
+          {% if facebook_url %}
+            <a href="{{ facebook_url }}" title="{{ site_name }}'s facebook page">
+              <img alt="Facebook" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png">
+            </a>
+          {% endif %}
+        </nav>
+      {% endif %}
+
+      <nav class="secondary-links site-nav">
+        <a href="/about" title="Contact {{ site_name }}">Contact Us</a>
+        <a href="/search" title="Search {{ site_name }}">Search</a>
+        {% if blog_url %}
+          <a href="{{ blog_url }}" title="{{ site_name }} blog">Blog</a>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+{% endblock %}

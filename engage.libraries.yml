@@ -1,0 +1,33 @@
+global-css:
+  css:
+    base:
+      css/style.css: {}
+
+global-js:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.3.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css:
+        type: external
+        minified: true
+
+fira-sans:
+  remote: http://mozilla.github.io/Fira/
+  license:
+    name: SIL OPEN FONT LICENSE
+    url: https://github.com/mozilla/Fira/blob/master/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      http://code.cdn.mozilla.net/fonts/fira.css: { type: external }

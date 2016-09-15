@@ -1,0 +1,15 @@
+
+
+@mixin clearfix() {
+  overflow: auto;
+}
+
+@mixin icon($icon) {
+
+
+  &:before {
+    content: $icon;
+    @include fa-icon();
+    color: $primary-color; 
+  }
+}
