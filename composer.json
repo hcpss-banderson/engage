@@ -1,5 +1,5 @@
 {
-  "name": "drupal/engage",
+  "name": "hcpss/engage",
   "type": "drupal-theme",
   "description": "A Susy based Drupal theme.",
   "keywords": ["Drupal"],
@@ -11,13 +11,5 @@
       "name": "Brendan Anderson",
       "role": "Maintainer"
     }
-  ],
-  "scripts": {
-    "post-install-cmd": [
-      "gulp sass"
-    ],
-    "post-update-cmd": [
-      "gulp sass"
-    ]
-  }
+  ]
 }
